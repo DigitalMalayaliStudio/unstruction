@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html class="sl-theme-dark" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Unstruction is an open-source web template for setting up a simple and easy 'website under construction' page.">
+    <meta property="og:title" content="Unstruction - Open-source Template for Under Construction">
+    <meta name="og:description"
+        content="Unstruction is an open-source web template for setting up a simple and easy 'website under construction' page.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://unstruction.digitalmalayali.in/">
+    <meta property="og:image" content="https://unstruction.digitalmalayali.in/assets/preview.webp">
+    <title>Unstruction - Under Construction</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <script src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.18.0/dist/utilities/shoelace.js"
+        data-shoelace="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0/dist/"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.16.0/cdn/themes/dark.css">
+    <script type="module"
+        src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.18.0/cdn/components/card/card.js"></script>
+    <script type="module"
+        src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.18.0/cdn/components/button/button.js"></script>
+    <script type="module"
+        src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.18.0/cdn/components/icon-button/icon-button.js"></script>
+    <script type="module"
+        src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.18.0/cdn/components/icon/icon.js"></script>
+    <script type="module"
+        src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.18.0/cdn/components/button-group/button-group.js"></script>
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: var(--sl-font-sans);
+            line-height: var(--sl-line-height-normal);
+        }
+
+        .card-overview {
+            max-width: 350px;
+        }
+
+        .card-overview small {
+            color: var(--sl-color-neutral-700);
+        }
+
+        .card-overview [slot='footer'] {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        sl-button::part(base) {
+            color: var(--sl-color-gray-50);
+            background-color: var(--sl-color-orange-600);
+            border-color: var(--sl-color-orange-300);
+        }
+
+        sl-button::part(base):hover {
+            background-color: var(--sl-color-orange-500);
+        }
+
+        sl-icon-button::part(base):hover {
+            color: var(--sl-color-orange-600);
+        }
+
+        .copyright {
+            color: var(--sl-color-neutral-600);
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        .copyright a {
+            color: var(--sl-color-orange-600);
+        }
+    </style>
+</head>
+
+<body>
+    <sl-card class="card-overview">
+        <img slot="image" src="assets/preview.webp" alt="Unstruction" width="350">
+
+        <strong>Unstruction</strong><br>
+        This website is under construction.<br>Please check back later!<br>
+        <small>Feel free to reach out to us.</small>
+        <div slot="footer">
+            <sl-button-group label="Alignment">
+                <sl-button variant="default" size="medium" circle href="tel:123456789">
+                    <sl-icon name="telephone" label="Phone"></sl-icon>
+                </sl-button>
+                <sl-button variant="default" size="medium" circle href="mailto:mail@example.com">
+                    <sl-icon name="envelope" label="Mail"></sl-icon>
+                </sl-button>
+                <sl-button variant="default" size="medium" circle href="https://wa.me/91123456789">
+                    <sl-icon name="whatsapp" label="WhatsApp"></sl-icon>
+                </sl-button>
+                <sl-button variant="default" size="medium" circle href="https://maps.google.com" target="_blank">
+                    <sl-icon name="geo-alt" label="Map"></sl-icon>
+                </sl-button>
+            </sl-button-group>
+        </div>
+    </sl-card>
+
+    <small class="copyright"><sl-icon-button name="github" label="Settings" style="font-size: 1.2rem;"
+            href="https://github.com/digitalmalayalistudio/unstruction/"
+            target="_blank"></sl-icon-button><br>MIT-licensed template by
+        <a href="http://studio.digitalmalayali.in/">Digital Malayali Studio</a><br>
+        © 2024 Digital Malayali Studio</small>
+</body>
