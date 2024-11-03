@@ -54,6 +54,11 @@
             align-items: center;
         }
 
+        sl-badge::part(base) {
+            background-color: var(--sl-color-orange-600);
+            --pulse-color: var(--sl-color-orange-600);
+        }
+
         sl-button::part(base) {
             color: var(--sl-color-gray-50);
             background-color: var(--sl-color-orange-600);
@@ -85,23 +90,23 @@
         <img slot="image" src="assets/preview.webp" alt="Unstruction" width="350">
 
         <strong>Unstruction</strong><br>
-        This website is under construction.<br>Please check back later in <sl-badge variant="warning" pill pulse
-            class="days"></sl-badge> days, <sl-badge variant="warning" pill pulse class="hr"></sl-badge> hours, <sl-badge
-            variant="warning" pill pulse class="min"></sl-badge> minutes and <sl-badge variant="warning" pill pulse
+        This website is under construction.<br>Please check back later in <sl-badge pill pulse
+            class="days"></sl-badge> days, <sl-badge pill pulse class="hr"></sl-badge> hours, <sl-badge
+            pill pulse class="min"></sl-badge> minutes and <sl-badge pill pulse
             class="sec"></sl-badge> seconds. <br>
         <small>Feel free to reach out to us.</small>
         <div slot="footer">
             <sl-button-group label="Alignment">
-                <sl-button variant="default" size="medium" circle href="tel:123456789">
+                <sl-button size="medium" circle href="tel:123456789">
                     <sl-icon name="telephone" label="Phone"></sl-icon>
                 </sl-button>
-                <sl-button variant="default" size="medium" circle href="mailto:mail@example.com">
+                <sl-button size="medium" circle href="mailto:mail@example.com">
                     <sl-icon name="envelope" label="Mail"></sl-icon>
                 </sl-button>
-                <sl-button variant="default" size="medium" circle href="https://wa.me/91123456789">
+                <sl-button size="medium" circle href="https://wa.me/91123456789">
                     <sl-icon name="whatsapp" label="WhatsApp"></sl-icon>
                 </sl-button>
-                <sl-button variant="default" size="medium" circle href="https://maps.google.com" target="_blank">
+                <sl-button size="medium" circle href="https://maps.google.com" target="_blank">
                     <sl-icon name="geo-alt" label="Map"></sl-icon>
                 </sl-button>
             </sl-button-group>
@@ -115,7 +120,7 @@
         © 2024 Digital Malayali Studio</small>
 
     <script>
-        const intervalId = setInterval(timer);
+        const id = setInterval(timer, 1000);
 
         function timer() {
             const target = new Date('Jan 1, 3000, 00:00:00').getTime();
@@ -138,7 +143,7 @@
             document.querySelector('.sec').textContent = sec;
 
             if (diff <= 0) {
-                clearInterval(intervalId);
+                clearInterval(id);
                 document.querySelector('.days').textContent = '0';
                 document.querySelector('.hr').textContent = '0';
                 document.querySelector('.min').textContent = '0';
