@@ -56,7 +56,7 @@ Add the necessary contact details, such as phone number and email, in [lines 98â
 ```
 
 ### Add website launch date
-You can change the date in [line 126](https://github.com/digitalmalayalistudio/unstruction/blob/main/index.html#L126) of `index.html`. Make sure to use the long date format as shown in the example:
+You can change the date in [line 126](https://github.com/digitalmalayalistudio/unstruction/blob/main/index.html#L126) of `index.html`. Make sure to use a ISO 8601 format or the format shown in the example:
 
 ```js
 const target = new Date('Jan 1, 3000, 00:00:00').getTime();
