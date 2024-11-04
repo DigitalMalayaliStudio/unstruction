@@ -29,7 +29,7 @@ Make sure to change the [meta](https://github.com/digitalmalayalistudio/unstruct
 ```
 
 ### Change image
-Add an image with a minium width of 350px to assets folder replacing [preview.webp](https://github.com/DigitalMalayaliStudio/unstruction/blob/main/assets/preview.webp). 
+Add an image with a minimum width of 350px to assets folder replacing [preview.webp](https://github.com/DigitalMalayaliStudio/unstruction/blob/main/assets/preview.webp). 
 
 ### Add website launch date
 You can change the date in [line 126](https://github.com/digitalmalayalistudio/unstruction/blob/main/index.html#L126) of `index.html`. Make sure to use the long date format as shown in the example:
