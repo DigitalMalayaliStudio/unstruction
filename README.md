@@ -5,6 +5,8 @@
 # Unstruction
 An open-source web template built with [Shoelace](https://shoelace.style/) for setting up a simple and easy **website under construction** page.
 
+[**Live Demo ◉**](https://digitalmalayalistudio.github.io/unstruction/)
+
 </div>
 
 ## Features
