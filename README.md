@@ -29,7 +29,29 @@ Make sure to change the [meta](https://github.com/digitalmalayalistudio/unstruct
 ```
 
 ### Change image
-Add an image with a minimum width of 350px to assets folder replacing [preview.webp](https://github.com/DigitalMalayaliStudio/unstruction/blob/main/assets/preview.webp). 
+Add an image with a minimum width of 350px to assets folder replacing [preview.webp](https://github.com/DigitalMalayaliStudio/unstruction/blob/main/assets/preview.webp).
+
+### Add contact details
+Add the necessary contact details, such as phone number and email, in [lines 98–112](https://github.com/digitalmalayalistudio/unstruction/blob/main/index.html#L98-L112).
+
+```html
+<div slot="footer">
+    <sl-button-group label="Alignment">
+        <sl-button size="medium" circle href="tel:123456789">
+            <sl-icon name="telephone" label="Phone"></sl-icon>
+        </sl-button>
+        <sl-button size="medium" circle href="mailto:mail@example.com">
+            <sl-icon name="envelope" label="Mail"></sl-icon>
+        </sl-button>
+        <sl-button size="medium" circle href="https://wa.me/91123456789">
+            <sl-icon name="whatsapp" label="WhatsApp"></sl-icon>
+        </sl-button>
+        <sl-button size="medium" circle href="https://maps.google.com" target="_blank">
+            <sl-icon name="geo-alt" label="Map"></sl-icon>
+        </sl-button>
+    </sl-button-group>
+</div>
+```
 
 ### Add website launch date
 You can change the date in [line 126](https://github.com/digitalmalayalistudio/unstruction/blob/main/index.html#L126) of `index.html`. Make sure to use the long date format as shown in the example:
