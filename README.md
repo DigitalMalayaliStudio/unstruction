@@ -5,6 +5,10 @@
 # Unstruction
 An open-source web template built with [Shoelace](https://shoelace.style/) for setting up a simple and easy **website under construction** page.
 
+[![Static Badge](https://img.shields.io/badge/jekyll-theme-CC0000?logo=jekyll&logoColor=%23CC0000)](https://github.com/digitalmalayalistudio/unstruction-jekyll-theme/)
+[![Gem (including prereleases)](https://img.shields.io/gem/v/unstruction-jekyll-theme?logo=ruby&logoColor=%23E9573F)](https://rubygems.org/gems/unstruction-jekyll-theme)
+[![Gem](https://img.shields.io/gem/dt/unstruction-jekyll-theme?logo=ruby&logoColor=%23E9573F)](https://rubygems.org/gems/unstruction-jekyll-theme)
+
 [Live Demo ◉](https://digitalmalayalistudio.github.io/unstruction/)
 
 </div>
